@@ -195,7 +195,10 @@ How does the missingness of the data impact what variables you might choose to a
 #| label: plot  
 youth_clean |>  #instead of data = youth_clean in ggplot we can "pipe" our data  
   drop_na() |>  #drops missing values
-  ggplot()
+  ggplot() +
+  geom_point(mapping = aes(x = "height_in_meters", y = "weight_in_kilograms",
+                           colour = "perception_of_weight")) +
+  geom_smooth(method = lm, mapping = aes(x = "height_in_meters", y = "weight_in_kilograms"))
 ```
 
 Complete the following steps in your visualization in the code chunk above:
