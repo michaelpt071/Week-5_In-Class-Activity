@@ -71,12 +71,15 @@ Go ahead and read in the data, calling it `youth`. What do you notice?
 #| label: read-data
 #| eval: false
 
-youth <- read_csv("data-raw/YRBS2015.csv")
+youth <- read_csv("raw_data/YRBS2015.csv", skip = 1,
+                  na =c("N/A"))
+
+
 ```
 
 Describe some of the issues you notice in the data:
 
-> Insert answer here
+> Read numeric data as character data
 
 ### Step 2: Skip the First Row
 
