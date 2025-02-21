@@ -181,11 +181,11 @@ youth_clean |>
 
 What do the two graphs tell you about the missingness in the data (i.e., which variables are missing the most values and which combinations of variables are missing the most together)?
 
-> Insert Answer Here
+> The first graph specifies the number of missing values for each variable, and the second graph visualizes the overlap of those missing values.
 
 How does the missingness of the data impact what variables you might choose to analyze? Why?
 
-> Insert Answer Here
+> It limits the study to certian types of analysis of variables, depending on their missingness.
 
 <!-- Change roles (Developer becomes Coder)! -->
 
