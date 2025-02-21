@@ -197,7 +197,7 @@ youth_clean |>  #instead of data = youth_clean in ggplot we can "pipe" our data
   drop_na() |>  #drops missing values
   ggplot() +
   geom_point(mapping = aes(x = "height_in_meters", y = "weight_in_kilograms",
-                           colour = "perception_of_weight")) +
+                           colour = "perception_of_weight")) + 
   geom_smooth(method = lm, mapping = aes(x = "height_in_meters", y = "weight_in_kilograms"))
 ```
 
