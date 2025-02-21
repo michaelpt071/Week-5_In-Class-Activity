@@ -137,20 +137,29 @@ Add additional arguments to the code above that does the following:
 
 Use the `janitor` package to clean the variable names to snake_case.
 
+```{r}
+youth <- clean_names(youth)
+```
+
+
+
 ### Step 6: Write the Clean Data
 
 Write the clean data to the `data-clean` folder.
+```{r}
+write_csv(youth, "clean_data/youth_clean.csv")
+```
 
 Now that the data is clean, you can add `eval: false` to the prior code chunks and read in the clean data below.
 
 ```{r}
 #| label: read-clean-data
-youth_clean <- 
+youth_clean <- read_csv("clean_data/youth_clean.csv")
 ```
 
 Why do we keep the code for the data cleaning but set the code chunks to `eval: false`?
 
-> Insert Answer Here
+> We only want to clean the code once to save time and power
 
 <!-- Change roles (Developer becomes Coder)! -->
 
